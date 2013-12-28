@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Sample app</title>
+    <link rel="stylesheet" href="css/semantic.css">
+    
+    <!-- import the click-counter -->
+    <link rel="import" href="qotd.html">
+    <link rel="import" href="weather.html">
+    
+    <script type="application/dart">export 'package:polymer/init.dart';</script>
+    <script src="packages/browser/dart.js"></script>
+  </head>
+  <body>
+    <h1>GetWidget</h1>
+    
+    <p>Hello world from Dart!</p>
+    
+    
+      <qotd-tag></qotd-tag>
+      <weather-tag city="suzhou,china" code="101190401"></weather-tag>
+      
+    
+
+  </body>
+</html>

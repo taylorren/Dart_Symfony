@@ -1,0 +1,21 @@
+<polymer-element name="weather-tag" attributes="city code">
+  <template>
+    <meta charset="utf-8">
+    <template if='{{!one}}'>
+        <div class="ui message">
+        <p>{{w1.city}}今日（{{w1.week}}）天气：{{w1.weather}}<img src="http://m.weather.com.cn/img/d{{w1.img}}.gif" title="{{w1.imgdesc}}">，气温：{{w1.temp}}
+        <br><i title="Refresh" class="refresh icon small link" on-click="{{getWeather}}"></i></p>
+    </div>
+    </template>
+    <template if='{{one}}'>
+        <div class="ui message">
+        <p>Today in {{w2.city}}: {{w2.desc}}, temperature {{w2.temp}} celcius, humidity {{w2.humidity}}%
+        <br><i title="Refresh" class="refresh icon small link" on-click="{{getWeather}}"></i></p>
+        </div>
+        
+    </template>
+    
+  </template>
+  <script type="application/dart" src="weather.dart"></script>
+</polymer-element>
+

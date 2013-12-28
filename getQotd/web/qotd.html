@@ -1,0 +1,11 @@
+<polymer-element name="qotd-tag">
+<template>
+
+<div class="ui message">
+<p>{{quote}}<br>
+<small><em>{{source}}</em></small>&nbsp;&nbsp;<i title="Refresh" class="refresh icon small link" on-click="{{getQuote}}"></i></p>
+</div>
+
+</template>
+<script type="application/dart" src="qotd.dart"></script>
+</polymer-element>
